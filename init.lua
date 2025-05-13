@@ -56,12 +56,12 @@ If you experience any errors while trying to install kickstart, run `:checkhealt
 I hope you enjoy your Neovim journey,
 - TJ
 
-P.S. You can delete this when you're done too. It's your config now! :)
---]]
+P.S. You can delete this when you're done too. It's your config now! :) --]]
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -180,6 +180,10 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
+=======
+require 'juanabr'
+print 'hello'
+>>>>>>> Stashed changes
 =======
 require 'juanabr'
 print 'hello'
