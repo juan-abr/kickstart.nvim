@@ -4,11 +4,22 @@ print 'Hello from set'
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+-- For the block cursor
+vim.opt.guicursor = ''
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
+
+-- Indentation preferences
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
+vim.opt.smartindent = true
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
@@ -24,12 +35,22 @@ end)
 -- Enable break indent
 vim.opt.breakindent = true
 
+-- To be used if breakindent is false
+--vim.opt.wrap = false
+
 -- Save undo history
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv 'HOME' .. '/.vim/undodir'
 vim.opt.undofile = true
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+-- Also for searching
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
@@ -57,7 +78,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
