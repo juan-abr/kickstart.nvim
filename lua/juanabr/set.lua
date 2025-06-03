@@ -33,10 +33,10 @@ vim.schedule(function()
 end)
 
 -- Enable break indent
-vim.opt.breakindent = true
+--vim.opt.breakindent = true
 
 -- To be used if breakindent is false
---vim.opt.wrap = false
+vim.opt.wrap = false
 
 -- Save undo history
 vim.opt.swapfile = false
